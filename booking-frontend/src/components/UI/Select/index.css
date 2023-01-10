@@ -1,0 +1,13 @@
+.select-option-icon {
+  margin-right: 20px;
+}
+
+.select-option-label {
+  line-height: 1;
+}
+
+.select-option-sublabel {
+  font-size: 14px;
+  line-height: 1;
+  color: var(--text-secondary);
+}

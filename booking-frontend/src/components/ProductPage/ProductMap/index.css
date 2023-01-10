@@ -1,0 +1,13 @@
+.product-map-hr {
+  border: 0.5px solid var(--primary);
+}
+
+.product-city-map-content {
+  padding: 10px 0 10px 0;
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 576px) {
+}

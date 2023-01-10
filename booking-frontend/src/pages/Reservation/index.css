@@ -1,0 +1,51 @@
+.reservation-page-container {
+  background-color: var(--light-grey);
+}
+
+.reservation-page-error > div {
+  margin-top: 24px;
+}
+
+.reservation-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'user user rental'
+    'date date rental'
+    'time time rental';
+  gap: 24px;
+  padding-top: 36px !important;
+  padding-bottom: 36px !important;
+}
+
+.reservation-page-form {
+  grid-area: user;
+}
+
+.reservation-page-calendar {
+  grid-area: date;
+}
+
+.reservation-page-checkin {
+  grid-area: time;
+}
+
+.reservation-page-detail {
+  grid-area: rental;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1124px) {
+  .reservation-page-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'user'
+      'date'
+      'time'
+      'rental';
+  }
+}
+
+@media only screen and (max-width: 576px) {
+}

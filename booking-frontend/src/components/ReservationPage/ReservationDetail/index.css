@@ -1,0 +1,99 @@
+.reservation-detail-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 16px;
+}
+
+.reservation-detail-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.reservation-detail-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+}
+
+.reservation-detail-country {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.reservation-detail-button {
+  width: 100%;
+  height: 50px;
+  margin-top: auto;
+}
+
+.detail-checkin-container > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .reservation-detail-card {
+    flex-direction: row;
+    height: 410px;
+  }
+
+  .reservation-detail-image {
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .reservation-detail-image img {
+    height: 100%;
+  }
+
+  .reservation-detail-country {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .detail-checkin-container > div {
+    padding: 8px 0px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .reservation-detail-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .reservation-detail-image {
+    width: 100%;
+    height: 270px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .reservation-detail-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 15px 20px;
+  }
+
+  .reservation-detail-country {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .detail-checkin-container > div {
+    padding: 10px 0px 10px 0px;
+  }
+
+  .reservation-detail-button {
+    margin-top: 5px;
+  }
+}

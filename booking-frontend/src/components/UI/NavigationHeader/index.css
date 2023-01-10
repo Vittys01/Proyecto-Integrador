@@ -1,0 +1,26 @@
+.nav-header-container {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--primary);
+}
+
+.nav-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
+
+.nav-header-category {
+  color: var(--light-grey);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nav-header-name {
+  margin: 0;
+}
+
+.nav-header-back {
+  gap: 8px;
+}

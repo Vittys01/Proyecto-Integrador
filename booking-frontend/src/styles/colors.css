@@ -1,0 +1,20 @@
+:root {
+  --primary: #f0572d;
+  --secondary: #383b58;
+  --secondary-light: #545776;
+
+  --light-error: #b0002015;
+  --error: #b00020;
+
+  --bg-primary: #f3f1ed;
+  --bg-error: #ffe1e1;
+
+  --text-primary: #383b58;
+  --text-secondary: #63678d;
+
+  --light-grey: #f3f1ed;
+  --grey: #bebebe;
+  --dark-grey: #727272;
+
+  --white: #ffffff;
+}

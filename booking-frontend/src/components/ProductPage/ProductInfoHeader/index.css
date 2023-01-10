@@ -1,0 +1,20 @@
+.product-info-header-container {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--light-grey);
+}
+
+.product-info-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-ubication-icon {
+  margin-top: 2px;
+}
+
+.product-ubication-text {
+  margin-left: 4px;
+  font-size: 14px;
+}

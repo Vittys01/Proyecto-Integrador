@@ -1,0 +1,97 @@
+stages:
+  - build-back
+  - deploy-back
+  - install
+  - build
+  - deploy
+
+install:
+  stage: install
+  image: node:latest
+  script:
+    - cd  booking-frontend && npm i
+  artifacts:
+    expire_in: "1h"
+    paths:
+      - "./booking-frontend/node_modules"
+  cache:
+    paths: 
+      - "./booking-frontend/node_modules"
+  only: 
+    - develop
+
+build:
+  stage: build
+  image: node:latest
+  dependencies:
+    - "install"
+  script:
+    - echo "Building project"
+    - cd ./booking-frontend 
+    - npm install
+    - CI=false npm run build
+  artifacts:
+    expire_in: "1h"
+    paths:
+      - booking-frontend/build/
+  cache:
+    paths: 
+      - booking-frontend/build
+  only:
+    - develop
+
+
+deploy:
+  stage: deploy
+  dependencies:
+    - "build"
+  image: python:latest
+  only:
+    - "develop"
+  script: 
+    - pip install --upgrade pip
+    - pip install awscli
+    - aws s3 sync ./booking-frontend/build s3://$AWS_BUCKET --delete
+
+
+build-back:
+  stage: build-back
+  image:  maven:3.8.6-openjdk-18
+  script:
+      - echo "Building app..."
+      - cd booking
+      - mvn clean package
+      - echo "Finished building the app."
+  artifacts:
+      expire_in: 1 week
+      paths:
+          - booking/target/booking.jar
+  cache:
+    paths: 
+      - booking/target/booking.jar
+  only:
+      - develop
+
+deploy-back:
+    stage: deploy-back
+    dependencies:
+    - build-back
+    image: alpine:3.11
+    before_script:
+        - apk update && apk add openssh-client bash
+        - mkdir -p ~/.ssh
+        - eval $(ssh-agent -s)
+        - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+        - touch ~/.ssh/config
+        - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+        - ssh-keyscan -H $DEPLOY_SERVER_IP >> ~/.ssh/known_hosts
+    script:
+        - echo "Deploying started..."
+        - ssh ubuntu@$DEPLOY_SERVER_IP "sudo systemctl stop booking.service"
+        - scp ./booking/target/booking.jar ubuntu@$DEPLOY_SERVER_IP:~/booking-app/
+        - ssh ubuntu@$DEPLOY_SERVER_IP "sudo systemctl start booking.service"
+        - echo "Finished deploying the app."
+    only:
+        - develop
+  
+   

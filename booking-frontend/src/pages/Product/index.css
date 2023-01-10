@@ -1,0 +1,21 @@
+.product-page-container {
+  background-color: var(--white);
+}
+
+.product-page-content {
+  padding-bottom: 60px;
+}
+
+.product-page-content > div {
+  margin-bottom: 36px;
+}
+
+.product-header-category {
+  color: var(--light-grey);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.product-header-name {
+  margin: 0;
+}

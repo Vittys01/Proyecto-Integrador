@@ -1,0 +1,35 @@
+.add-image-title {
+  margin: 32px 0 24px;
+}
+
+.add-image-container {
+  display: flex;
+  padding: 24px;
+  background-color: var(--bg-primary);
+  border-radius: 5px;
+}
+
+.add-image-inputs {
+  flex-direction: column;
+  width: 100%;
+}
+
+.add-image-input > input {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .product-image-create-container {
+    margin: 0 20px 10px 20px;
+    padding: 30px 25px 30px 25px;
+    width: 94%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .product-image-create-container {
+    margin: 0 10px 10px 10px;
+    padding: 20px 15px 5px 15px;
+    width: 94%;
+  }
+}

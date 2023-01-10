@@ -1,0 +1,62 @@
+.reservation-checkin-card {
+  width: 100%;
+  padding: 24px;
+  margin-top: 16px;
+}
+
+.reservation-checkin-content-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.text-select {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.reservation-checkin-select {
+  width: 388px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* .reservation-checkin-container {
+    display: flex;
+    padding: 24px 0px 0 0;
+  }
+
+  .reservation-checkin-container > div {
+    width: 100%;
+  }
+
+  .checkin-card-container {
+    width: 100%;
+    padding: 29px;
+    margin-top: 20px;
+  }
+
+  .checkin-content-header {
+    font-size: 14px;
+  }
+
+  .text-select {
+    font-size: 12px;
+  } */
+}
+
+@media only screen and (max-width: 576px) {
+  .reservation-checkin-content-header {
+    width: 315px;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  .text-select {
+    font-size: 12px;
+  }
+
+  .reservation-checkin-select {
+    width: 316px;
+  }
+}

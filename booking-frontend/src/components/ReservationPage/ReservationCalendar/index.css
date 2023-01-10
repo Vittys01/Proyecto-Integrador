@@ -1,0 +1,146 @@
+.calendar-reservation-content {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-top: 15px;
+}
+
+.reservation-calendar-picker {
+  width: 100%;
+}
+
+.reservation-calendar-picker > div {
+  width: 100%;
+}
+
+.reservation-calendar-picker > div > div {
+  width: 100%;
+}
+
+.reservation-calendar-picker .react-datepicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  padding: 28px 0;
+}
+
+.reservation-calendar-picker .react-datepicker__month-container:last-child {
+  border-left: 1px solid var(--grey);
+}
+
+.reservation-calendar-picker .react-datepicker__month-container {
+  padding: 0 24px;
+}
+
+.reservation-calendar-picker .react-datepicker__navigation--previous {
+  top: 24px;
+}
+
+.reservation-calendar-picker .react-datepicker__navigation--next {
+  top: 24px;
+}
+
+@media (min-width: 1280px) {
+  .reservation-calendar-picker .react-datepicker__navigation--previous {
+    left: 28px;
+    top: 150px;
+    color: var(--white);
+    background-color: var(--text-primary);
+    border-radius: 100%;
+  }
+
+  .reservation-calendar-picker .react-datepicker__navigation--next {
+    right: 28px;
+    top: 150px;
+    color: var(--white);
+    background-color: var(--text-primary);
+    border-radius: 100%;
+  }
+
+  .reservation-calendar-picker .react-datepicker__navigation--previous:hover,
+  .reservation-calendar-picker .react-datepicker__navigation--next:hover {
+    opacity: 0.75;
+  }
+
+  .reservation-calendar-picker .react-datepicker__navigation-icon {
+    right: 0;
+    left: 0;
+  }
+
+  .reservation-calendar-picker .react-datepicker__navigation-icon::before {
+    border-color: var(--white);
+  }
+}
+
+@media (max-width: 1125px) and (min-width: 920px) {
+  .reservation-calendar-picker .react-datepicker__navigation--previous {
+    left: 28px;
+    top: 150px;
+    color: var(--white);
+    background-color: var(--text-primary);
+    border-radius: 100%;
+  }
+
+  .reservation-calendar-picker .react-datepicker__navigation--next {
+    right: 28px;
+    top: 150px;
+    color: var(--white);
+    background-color: var(--text-primary);
+    border-radius: 100%;
+  }
+
+  .reservation-calendar-picker .react-datepicker__navigation--previous:hover,
+  .reservation-calendar-picker .react-datepicker__navigation--next:hover {
+    opacity: 0.75;
+  }
+
+  .reservation-calendar-picker .react-datepicker__navigation-icon {
+    right: 0;
+    left: 0;
+  }
+
+  .reservation-calendar-picker .react-datepicker__navigation-icon::before {
+    border-color: var(--white);
+  }
+}
+
+@media (max-width: 790px) and (min-width: 500px) {
+  .reservation-calendar-picker .react-datepicker__navigation--previous {
+    left: 28px;
+    top: 150px;
+    color: var(--white);
+    background-color: var(--text-primary);
+    border-radius: 100%;
+  }
+
+  .reservation-calendar-picker .react-datepicker__navigation--next {
+    right: 28px;
+    top: 150px;
+    color: var(--white);
+    background-color: var(--text-primary);
+    border-radius: 100%;
+  }
+
+  .reservation-calendar-picker .react-datepicker__navigation--previous:hover,
+  .reservation-calendar-picker .react-datepicker__navigation--next:hover {
+    opacity: 0.75;
+  }
+
+  .reservation-calendar-picker .react-datepicker__navigation-icon {
+    right: 0;
+    left: 0;
+  }
+
+  .reservation-calendar-picker .react-datepicker__navigation-icon::before {
+    border-color: var(--white);
+  }
+}
+
+@media (max-width: 790px) {
+  .reservation-calendar-picker .react-datepicker__month-container:last-child {
+    border-left: none;
+  }
+}

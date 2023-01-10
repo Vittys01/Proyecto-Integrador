@@ -1,0 +1,16 @@
+.layout-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.layout-body {
+  height: 100vh;
+  padding: 84px 0 0;
+  background-color: var(--bg-primary);
+}
+
+.layout-body-content {
+  background-color: var(--bg-primary);
+}

@@ -1,0 +1,26 @@
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 16px 0;
+  color: var(--white);
+  background-color: var(--primary);
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content-social {
+  display: flex;
+  gap: 25px;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer-content-social {
+    display: none;
+  }
+}

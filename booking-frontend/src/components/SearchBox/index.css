@@ -1,0 +1,67 @@
+.searchbox-container {
+  padding: 26px;
+  color: var(--white);
+  text-align: center;
+  background-color: var(--secondary);
+}
+
+.searchbox-form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.searchbox-city-select {
+  width: 422px;
+}
+
+.searchbox-date-picker {
+  width: 422px;
+}
+
+.searchbox-date-picker .react-datepicker {
+  padding: 18px 0;
+}
+
+.searchbox-date-picker .react-datepicker > button {
+  display: block;
+  margin: 0 24px 0 auto;
+}
+
+.searchbox-date-picker .react-datepicker__month-container {
+  padding: 6px 16px 16px;
+}
+
+.searchbox-date-picker .react-datepicker__navigation--next,
+.searchbox-date-picker .react-datepicker__navigation--previous {
+  top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .searchbox-city-select {
+    width: 254px;
+  }
+
+  .searchbox-date-picker {
+    width: 254px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .searchbox-form {
+    flex-direction: column;
+  }
+
+  .searchbox-city-select {
+    width: 100%;
+  }
+
+  .searchbox-date-picker {
+    width: 100%;
+  }
+
+  .searchbox-search-button {
+    width: 100%;
+  }
+}

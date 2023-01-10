@@ -1,0 +1,30 @@
+.politics-container {
+  padding: 24px 0 80px;
+  background-color: var(--white);
+}
+
+.product-politics-hr {
+  border: 0.5px solid var(--primary);
+}
+
+.product-politics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 36px;
+  padding: 20px 0;
+  font-style: var(--text-secondary);
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .product-politics-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 36px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .product-politics-grid {
+    grid-template-columns: 1fr;
+  }
+}

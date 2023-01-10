@@ -1,0 +1,9 @@
+.my-reservations-container {
+  padding: 0 0 100px;
+}
+
+.bookings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}

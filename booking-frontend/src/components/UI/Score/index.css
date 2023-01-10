@@ -1,0 +1,27 @@
+.score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 80px;
+}
+
+.score-container-horizontal {
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 12px;
+}
+
+.score-value {
+  padding: 2px 14px;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--secondary);
+  border-radius: 10px;
+}
+
+.score-description {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+}

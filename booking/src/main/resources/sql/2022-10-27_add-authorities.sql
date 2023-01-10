@@ -1,0 +1,7 @@
+INSERT INTO 0521PTC8N2db_GRUPO3.authorities
+(id)
+VALUES('ADMIN');
+
+INSERT INTO 0521PTC8N2db_GRUPO3.authorities
+(id)
+VALUES('USER');

@@ -1,0 +1,42 @@
+.button-wrapper {
+  width: 206px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-wrapper:disabled {
+  background-color: var(--grey);
+  pointer-events: none;
+}
+
+.button-fill {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.button-fill:hover {
+  filter: brightness(1.25);
+}
+
+.button-outline {
+  color: var(--primary);
+  background-color: transparent;
+  border: 1.5px solid var(--primary);
+}
+
+.button-text {
+  width: auto;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .button-wrapper {
+    width: 166px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+}

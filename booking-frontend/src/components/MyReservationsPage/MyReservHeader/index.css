@@ -1,0 +1,26 @@
+.product-header-container {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--primary);
+}
+
+.product-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
+
+.product-header-category {
+  color: var(--light-grey);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.product-header-name {
+  margin: 0;
+}
+
+.product-header-back {
+  gap: 8px;
+}

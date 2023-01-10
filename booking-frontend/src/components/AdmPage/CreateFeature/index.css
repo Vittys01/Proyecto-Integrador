@@ -1,0 +1,51 @@
+.add-features-title {
+  margin: 32px 0 16px;
+}
+
+.add-features-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 24px 24px;
+  background-color: var(--bg-primary);
+  border-radius: 5px;
+  z-index: 1;
+  position: relative;
+}
+
+.add-features-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-features-input > div {
+  width: 100%;
+}
+
+.feature-select-label {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .product-features-create-container {
+    display: flex;
+    margin: 0 20px 15px 20px;
+    padding: 15px 15px 15px 15px;
+    width: 94%;
+  }
+
+  .add-feature-container {
+    margin: 0 15px 0 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .product-features-create-container {
+    display: flex;
+    margin: 0 5px 15px 5px;
+    padding: 10px 5px 10px 15px;
+    width: 97%;
+  }
+  .add-feature-container {
+    margin: 0 5px 0 5px;
+  }
+}

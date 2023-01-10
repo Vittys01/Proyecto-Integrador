@@ -1,0 +1,24 @@
+.adm-page-container {
+  padding-bottom: 100px;
+}
+
+.adm-page-header-name {
+  margin: 0;
+}
+
+.adm-page-title {
+  margin: 40px 0 16px;
+}
+
+.adm-page-card {
+  width: 100%;
+  padding: 32px 24px;
+}
+
+.adm-page-form {
+  flex-direction: column;
+}
+
+.adm-page-button {
+  margin: 32px auto 0;
+}

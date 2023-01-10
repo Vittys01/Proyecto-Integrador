@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+spring:
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/booking
+    username: postgres
+    password: 1234
+logging:
+  level:
+    org:
+      springframework:
+        web: INFO
+        context: INFO
